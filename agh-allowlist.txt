@@ -3,7 +3,6 @@
 @@||stcrooks.co.uk^
 @@||stcrooks.me^
 @@||stcrooks.uk^
-@@||apple.com^
 
 ! Apple Pivate Relay
 @@||mask.icloud.com^
