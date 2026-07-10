@@ -3,7 +3,6 @@ yandex.ru
 realmemobile.com
 oppomobile.com
 unity3d.com
-fyber.com
 
 #LG TV
 lgtvsdp.com
