@@ -4,6 +4,10 @@
 @@||stcrooks.me^
 @@||stcrooks.uk^
 
+! Cloudflare Tunnel
+@@||argotunnel.com^
+@@||api.cloudflare.com^
+
 ! Apple Pivate Relay
 @@||mask.icloud.com^
 @@||mask-h2.icloud.com^
