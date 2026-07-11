@@ -8,15 +8,6 @@
 @@||argotunnel.com^
 @@||api.cloudflare.com^
 
-! Apple Pivate Relay
-@@||mask.icloud.com^
-@@||mask-h2.icloud.com^
-@@||mask-api.icloud.com^
-@@||mask-canary.icloud.com^
-@@||mask.apple-dns.net^
-@@||mask-t.apple-dns.net^
-@@||canary.mask.apple-dns.net^
-
 ! Virgin TV Whitelist
 @@||a1.api.bbc.co.uk^
 
