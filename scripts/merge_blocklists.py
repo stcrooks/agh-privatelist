@@ -70,16 +70,45 @@ def write_outputs(domains: set[str], outdir: Path, source_note: str) -> None:
     plain_path = outdir / "merged-plain.txt"
 
     header_adblock = [
-        "! Title: Merged HaGeZi Pro + IPFire Advertising Blocklist",
-        f"! Description: Deduplicated union of HaGeZi Pro (filter_48) and {source_note}",
+        "! Merged HaGeZi Pro + IPFire Advertising Blocklist",
+        f"! Deduplicated union of HaGeZi Pro (filter_48) and {source_note}",
+        "! -----------------------------------------------------------------------------------",
+        "! IPFire Advertising Blocklist",
+        "! License       : CC BY-SA 4.0",
+        "! For more information or to contribute:",
+        "!    https://dbl.ipfire.org/",
+        "!    https://dbl.ipfire.org/lists/ads/domains.txt",
+        "! -----------------------------------------------------------------------------------",
+        "! HaGeZi's Pro DNS Blocklist",
+        "! Homepage: https://github.com/hagezi/dns-blocklists",
+        "! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE",
+        "! Issues: https://github.com/hagezi/dns-blocklists/issues",
+        "! Disclaimer: https://github.com/hagezi/dns-blocklists/blob/main/README.md#disclaimer",
+        "! -----------------------------------------------------------------------------------",      
         f"! Total domains: {len(sorted_domains)}",
-        "!",
+        "! -----------------------------------------------------------------------------------",
     ]
     header_plain = [
         "# Merged HaGeZi Pro + IPFire Advertising Blocklist",
         f"# Deduplicated union of HaGeZi Pro (filter_48) and {source_note}",
+        "# -----------------------------------------------------------------------------------",
+        "# IPFire Advertising Blocklist",
+        "# License       : CC BY-SA 4.0",
+        "# For more information or to contribute:",
+        "#    https://dbl.ipfire.org/",
+        "#    https://dbl.ipfire.org/lists/ads/domains.txt",
+        "# -----------------------------------------------------------------------------------",
+        "# HaGeZi's Pro DNS Blocklist",
+        "# Homepage: https://github.com/hagezi/dns-blocklists",
+        "# License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE",
+        "# Issues: https://github.com/hagezi/dns-blocklists/issues",
+        "# Disclaimer: https://github.com/hagezi/dns-blocklists/blob/main/README.md#disclaimer",
+        "# -----------------------------------------------------------------------------------",      
         f"# Total domains: {len(sorted_domains)}",
-        "#",
+        "# -----------------------------------------------------------------------------------",
+
+
+      
     ]
 
     adblock_path.write_text(
