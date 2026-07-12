@@ -9,7 +9,7 @@ Outputs two files (paths configurable via CLI flags or env vars):
 Usage:
   python3 merge_blocklists.py \
       --hagezi-url https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt \
-      --ipfire-url https://dbl.ipfire.org/advertising \
+      --ipfire-url https://dbl.ipfire.org/lists/ads/domains.txt \
       --outdir ./dist
 """
 
