@@ -61,6 +61,28 @@ def parse_plain_style(lines: list[str]) -> set[str]:
             domains.add(domain.lower())
     return domains
 
+def _build_header(comment: str, source_note: str, total: int) -> list[str]:
+    """Build a header block using `comment` as the line-prefix char ('!' or '#')."""
+    sep = f"{comment} " + "-" * 85
+    return [
+        f"{comment} Merged HaGeZi Pro + IPFire Advertising Blocklist",
+        f"{comment} Deduplicated union of HaGeZi Pro (filter_48) and {source_note}",
+        sep,
+        f"{comment} IPFire Advertising Blocklist",
+        f"{comment} License       : CC BY-SA 4.0",
+        f"{comment} For more information or to contribute:",
+        f"{comment}    https://dbl.ipfire.org/",
+        f"{comment}    https://dbl.ipfire.org/lists/ads/domains.txt",
+        sep,
+        f"{comment} HaGeZi's Pro DNS Blocklist",
+        f"{comment} Homepage: https://github.com/hagezi/dns-blocklists",
+        f"{comment} License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE",
+        f"{comment} Issues: https://github.com/hagezi/dns-blocklists/issues",
+        f"{comment} Disclaimer: https://github.com/hagezi/dns-blocklists/blob/main/README.md#disclaimer",
+        sep,
+        f"{comment} Total domains: {total}",
+        sep,
+    ]
 
 def write_outputs(domains: set[str], outdir: Path, source_note: str) -> None:
     outdir.mkdir(parents=True, exist_ok=True)
@@ -69,47 +91,8 @@ def write_outputs(domains: set[str], outdir: Path, source_note: str) -> None:
     adblock_path = outdir / "merged-adblock.txt"
     plain_path = outdir / "merged-plain.txt"
 
-    header_adblock = [
-        "! Merged HaGeZi Pro + IPFire Advertising Blocklist",
-        f"! Deduplicated union of HaGeZi Pro (filter_48) and {source_note}",
-        "! -----------------------------------------------------------------------------------",
-        "! IPFire Advertising Blocklist",
-        "! License       : CC BY-SA 4.0",
-        "! For more information or to contribute:",
-        "!    https://dbl.ipfire.org/",
-        "!    https://dbl.ipfire.org/lists/ads/domains.txt",
-        "! -----------------------------------------------------------------------------------",
-        "! HaGeZi's Pro DNS Blocklist",
-        "! Homepage: https://github.com/hagezi/dns-blocklists",
-        "! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE",
-        "! Issues: https://github.com/hagezi/dns-blocklists/issues",
-        "! Disclaimer: https://github.com/hagezi/dns-blocklists/blob/main/README.md#disclaimer",
-        "! -----------------------------------------------------------------------------------",      
-        f"! Total domains: {len(sorted_domains)}",
-        "! -----------------------------------------------------------------------------------",
-    ]
-    header_plain = [
-        "# Merged HaGeZi Pro + IPFire Advertising Blocklist",
-        f"# Deduplicated union of HaGeZi Pro (filter_48) and {source_note}",
-        "# -----------------------------------------------------------------------------------",
-        "# IPFire Advertising Blocklist",
-        "# License       : CC BY-SA 4.0",
-        "# For more information or to contribute:",
-        "#    https://dbl.ipfire.org/",
-        "#    https://dbl.ipfire.org/lists/ads/domains.txt",
-        "# -----------------------------------------------------------------------------------",
-        "# HaGeZi's Pro DNS Blocklist",
-        "# Homepage: https://github.com/hagezi/dns-blocklists",
-        "# License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE",
-        "# Issues: https://github.com/hagezi/dns-blocklists/issues",
-        "# Disclaimer: https://github.com/hagezi/dns-blocklists/blob/main/README.md#disclaimer",
-        "# -----------------------------------------------------------------------------------",      
-        f"# Total domains: {len(sorted_domains)}",
-        "# -----------------------------------------------------------------------------------",
-
-
-      
-    ]
+    header_adblock = _build_header("!", source_note, len(sorted_domains))
+    header_plain = _build_header("#", source_note, len(sorted_domains))
 
     adblock_path.write_text(
         "\n".join(header_adblock + [f"||{d}^" for d in sorted_domains]) + "\n",
