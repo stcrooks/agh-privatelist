@@ -1,42 +1,36 @@
 name: Update merged blocklist
-
 on:
   schedule:
     # Runs daily at 04:00 UTC — adjust as you like
     - cron: "0 4 * * *"
   workflow_dispatch: {}   # lets you trigger it manually from the Actions tab
-
 permissions:
   contents: write
-
 jobs:
   merge:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v6
-
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-
       - name: Run merge script
         run: |
           python3 scripts/merge_blocklists.py \
             --hagezi-url "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt" \
             --ipfire-url "https://dbl.ipfire.org/lists/ads/domains.txt" \
-            --outdir dist
-
+            --outdir dist \
+            --retention-days 3
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dist/merged-adblock.txt dist/merged-plain.txt
+          git add dist/*.txt
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
             git commit -m "Auto-update merged blocklist ($(date -u +'%Y-%m-%d'))"
             git push
           fi
-          
