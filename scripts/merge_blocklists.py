@@ -71,10 +71,12 @@ def parse_plain_style(lines: list[str]) -> set[str]:
  
 def _build_header(comment: str, source_note: str, total: int) -> list[str]:
     """Build a header block using `comment` as the line-prefix char ('!' or '#')."""
+    versionts = datetime.now().strftime("%Y%m%d%H%M")
     sep = f"{comment} " + "-" * 85
     return [
         f"{comment} Title: HaGeZi Pro & IP Fire Ads Merged",
-        f"{comment} Deduplicated union of HaGeZi Pro (filter_48) and {source_note}",
+        f"{comment} Description: Deduplicated union of HaGeZi Pro (filter_48) and {source_note}",
+        f"{comment} Version: {versionts}",
         sep,
         f"{comment} IPFire Advertising Blocklist",
         f"{comment} License       : CC BY-SA 4.0",
