@@ -1,6 +1,6 @@
 # Title: HaGeZi Pro & IP Fire Ads Merged
 # Description: Deduplicated union of HaGeZi Pro (filter_48) and IPFire Advertising Blocklist
-# Version: 202608071245
+# Version: 202608071242
 # -------------------------------------------------------------------------------------
 # IPFire Advertising Blocklist
 # License       : CC BY-SA 4.0
