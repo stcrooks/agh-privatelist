@@ -1,6 +1,6 @@
 ! Title: HaGeZi Pro & IP Fire Ads Merged
 ! Description: Deduplicated union of HaGeZi Pro (filter_48) and IPFire Advertising Blocklist
-! Version: 202608080459
+! Version: 202608071245
 ! -------------------------------------------------------------------------------------
 ! IPFire Advertising Blocklist
 ! License       : CC BY-SA 4.0
@@ -14,7 +14,7 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Disclaimer: https://github.com/hagezi/dns-blocklists/blob/main/README.md#disclaimer
 ! -------------------------------------------------------------------------------------
-! Total domains: 234735
+! Total domains: 234708
 ! -------------------------------------------------------------------------------------
 ||0--0.info^
 ||0--4.com^
@@ -7282,7 +7282,6 @@
 ||5475a282b8.com^
 ||5475feaab.clicknplay.to^
 ||548891.com^
-||548bxi4qcrtt82v.cfd^
 ||548f23e472.com^
 ||54907.com^
 ||54a73dbcb6.com^
@@ -17460,11 +17459,9 @@
 ||adrsbl.io^
 ||adrscibgiosrk.website^
 ||adrta.com^
-||adrtb.live^
 ||adrtb.network^
 ||adrttt.com^
 ||adrtx.net^
-||adrubi.com^
 ||adrule.net^
 ||adrun.ru^
 ||adrunner.com^
@@ -20985,7 +20982,6 @@
 ||ads9007.hotwords.com.br^
 ||ads92.radioonlinehd.com^
 ||adsa.socdate.net^
-||adsaay.com^
 ||adsadept.com^
 ||adsadminister.com^
 ||adsafee.io^
@@ -45511,7 +45507,6 @@
 ||bidverdrs.com^
 ||bidvertiser.com^
 ||bidvol.com^
-||bidzapstream.com^
 ||biebfabrco.com^
 ||biedonlineronka.com^
 ||biedromkao.shop^
@@ -51635,7 +51630,6 @@
 ||cadence.tt.omtrdc.net^
 ||cadence33.top^
 ||cadencebenefit.com^
-||cadent.com^
 ||cadent.tv^
 ||caderonline.bu.edu^
 ||cadetburlyclerk.com^
@@ -58725,7 +58719,6 @@
 ||coins.game^
 ||coinsdroppriest.com^
 ||coinspayworld.com^
-||coinspeaker.care^
 ||coinstancy.com^
 ||coinstong.com^
 ||coinsup.com^
@@ -61643,7 +61636,6 @@
 ||copolorewsr.com^
 ||coppedclaudia.cfd^
 ||coppedgauily.com^
-||copper6.com^
 ||copperate9.shop^
 ||copperate96.com^
 ||coppercranberrylamp.com^
@@ -63886,7 +63878,6 @@
 ||cryptobrowser.site^
 ||cryptobuffet.care^
 ||cryptocable.care^
-||cryptocalls.care^
 ||cryptocase.online^
 ||cryptocash24.com^
 ||cryptocoinsad.com^
@@ -70491,7 +70482,6 @@
 ||dexchangegenius.com^
 ||dexchangeinc.com^
 ||dexer-handel.de^
-||dexerto.media^
 ||dexian.site^
 ||dexinqa.com^
 ||dexinyi.cn^
@@ -75370,7 +75360,6 @@
 ||dxqck.com^
 ||dxqqoctjgddts.space^
 ||dxsvr.com^
-||dxtech.ai^
 ||dxtftrade.com^
 ||dxtnqglxrio.com^
 ||dxtv1.com^
@@ -84923,7 +84912,6 @@
 ||final-claim.pages.dev^
 ||final-future.com^
 ||finalatransports.com^
-||finaldiscount.shop^
 ||finalize-onlineagora.org^
 ||finalizeforce.com^
 ||finallica75.com^
@@ -86280,7 +86268,6 @@
 ||flowtradex.com^
 ||flowwiththetide.xyz^
 ||floxical.com^
-||floxis.tech^
 ||flqa83yic.com^
 ||flrdra.com^
 ||flrnneprlkqiz.online^
@@ -92023,6 +92010,7 @@
 ||ghax.org^
 ||ghazacast.com^
 ||ghazel.ru^
+||ghb.app.copper6.com^
 ||ghb.spotim.market^
 ||ghbkoshop.com^
 ||ghdvmofvjgnhr.store^
@@ -115484,7 +115472,6 @@
 ||korichniuu122.icu^
 ||korivelxan.com^
 ||korlivo.shop^
-||korlumo.com^
 ||kormiza.shop^
 ||kornhaus-romanshorn.ch^
 ||koroshshoes.sbs^
@@ -119307,7 +119294,6 @@
 ||lift.acquia.com^
 ||liftaholco.autos^
 ||liftdna.com^
-||liftdsp.com^
 ||liftedd.net^
 ||liftedknowledge.com^
 ||lifterpopup.com^
@@ -131008,7 +130994,6 @@
 ||media-fix.de^
 ||media-general.com^
 ||media-guardian.com^
-||media-lab.ai^
 ||media-markt.plumberstore.in^
 ||media-match.com^
 ||media-mercury.cursecdn.com^
@@ -131144,7 +131129,6 @@
 ||mediageneral.com^
 ||mediaglacier.com^
 ||mediago.io^
-||mediagotechnology.com^
 ||mediagra.com^
 ||mediahead.com^
 ||mediahell.world^
@@ -142132,7 +142116,6 @@
 ||niwooghu.com^
 ||niwota.com^
 ||nix.eox.at^
-||nix8y2w.t0r.space^
 ||nixagnyzswhct.online^
 ||nixbet-casino-fr.fr^
 ||nixbet-casino.fr^
@@ -143865,7 +143848,6 @@
 ||ntent.com^
 ||ntepadkozezji.online^
 ||nteqanqudxl.com^
-||ntesgsght.com^
 ||ntf1.me^
 ||ntf67.xyz^
 ||ntfck.com^
@@ -146972,7 +146954,6 @@
 ||onead.onevision.com.tw^
 ||oneaddamore.site^
 ||oneadlt.hit.gemius.pl^
-||oneadtag.com^
 ||oneafteranoth.com^
 ||oneapm.com^
 ||onebyaol.com^
@@ -160313,7 +160294,6 @@
 ||programmaticnexus.com^
 ||programmatics.net^
 ||programmatictrader.com^
-||programmaticx.ai^
 ||programme-mondial.com^
 ||programme.enviedeplus.com^
 ||programmesheadstoneconsult.com^
@@ -160936,7 +160916,6 @@
 ||prs-installateur.at^
 ||prs612.us^
 ||prscripts.com^
-||prsitecheck.com^
 ||prsnnsgdbhtwsb.com^
 ||prstatics.com^
 ||prsutbxjqvriz.site^
@@ -165451,7 +165430,6 @@
 ||rabelmedia.com^
 ||rabgvk.com^
 ||rabicunbone.com^
-||rabid.care^
 ||rabidgeoff.com^
 ||rabinmakahfoambow.cfd^
 ||rabiousmythify.shop^
@@ -165523,7 +165501,6 @@
 ||radhandel24.de^
 ||radiadoresadicionales.com^
 ||radialcreative.com.au^
-||radian.mobi^
 ||radiancelongitude.com^
 ||radiancerelaysacred.com^
 ||radiancethedevice.com^
@@ -167175,7 +167152,6 @@
 ||redfinsraiment.shop^
 ||redflu.ru^
 ||redfoxlotto.fr^
-||redgarto.com^
 ||redgeark.com^
 ||redglobaldigital.com^
 ||redhat.tt.omtrdc.net^
@@ -172106,7 +172082,6 @@
 ||rtb.liantezmedia.com^
 ||rtb.mkt.origin-data.com^
 ||rtb.mts.ru^
-||rtb.mx^
 ||rtb.nowsrv.com^
 ||rtb.nuismak.com^
 ||rtb.optinian.com^
@@ -185924,7 +185899,6 @@
 ||slots-palace.tf^
 ||slotseatercasino.fr^
 ||slotshoppercasino.de^
-||slotslaunch.com^
 ||slotsmiling.com^
 ||slotsmines.fr^
 ||slotsvader-casino.fr^
@@ -197919,6 +197893,7 @@
 ||sync-yieldmo-com-tf-1869548451.eu-west-1.elb.amazonaws.com^
 ||sync.3fmediagroup.com^
 ||sync.aniview.com^
+||sync.app.copper6.com^
 ||sync.ebis.ne.jp^
 ||sync.etalonco.com^
 ||sync.etalonconsulting.com^
@@ -198402,7 +198377,6 @@
 ||t.lobun7jglch8l3.cyou^
 ||t.lt02.net^
 ||t.ltiquery.com^
-||t.marketing.goindigo.in^
 ||t.matterhornparadise.ch^
 ||t.maxtrck.shop^
 ||t.mediacartel.ru^
@@ -201792,6 +201766,7 @@
 ||tg.zeatinsnemine.com^
 ||tg0val4vb.com^
 ||tg1.aniview.com^
+||tg1.copper6.com^
 ||tg1.playstream.media^
 ||tg1.viewtv.cloud^
 ||tg1.xapstream.com^
@@ -231331,7 +231306,6 @@
 ||yrviuivtxhqay.store^
 ||yrwks6l3cy.com^
 ||yrwqdnqkih.data.adobedc.net^
-||yrxtam.com^
 ||yrymsxcr.shop^
 ||yrzxtzesdunxz.space^
 ||ys-log-upload-os.hoyoverse.com^
@@ -234585,7 +234559,6 @@
 ||zxxds.net^
 ||zxyc1688.com^
 ||zxyemuurmkjcel.com^
-||zxyvrtd.com^
 ||zxzbjqoyojpza.site^
 ||zxzs365.cn^
 ||zy.aphacicfable.com^
