@@ -19,10 +19,12 @@ jobs:
       - name: Run merge script
         run: |
           python3 scripts/merge_blocklists.py \
-            --hagezi-url "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt" \
+            --hagezi-url "https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/pro.txt" \
             --ipfire-url "https://dbl.ipfire.org/lists/ads/domains.txt" \
             --outdir dist \
             --retention-days 3
+        # https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt
+        # https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/pro.txt
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
