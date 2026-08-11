@@ -19,7 +19,7 @@ jobs:
       - name: Run merge script
         run: |
           python3 scripts/merge_blocklists.py \
-            --hagezi-url "https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/pro.txt" \
+            --hagezi-url "https://hagezi-mirror.dnsbunker.org/adblock/pro.txt" \
             --ipfire-url "https://dbl.ipfire.org/lists/ads/domains.txt" \
             --outdir dist \
             --retention-days 3
